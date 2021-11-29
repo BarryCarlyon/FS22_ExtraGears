@@ -86,27 +86,6 @@ function ExtraGears:onDraw(dt)
             if nil == ExtraGears.shiftGearOverrideAmount then
             ExtraGears.shiftGearOverrideAmount = 0
             end
-            -- print("ExtraGears - Is sync")
-            -- local spec = vehicle.spec_motorized
-            -- if spec ~= nil and isMotorStarted then
-            --     print("ExtraGears - Is Motor started")
-            -- end
-
-            -- local posX = 0
-            -- local gear_text_4 = SpeedMeterDisplay.POSITION.GEAR_TEXT_3[2] - SpeedMeterDisplay.POSITION.GEAR_TEXT_3[1]
-            -- local posY = g_currentMission.inGameMenu.hud.speedMeter:scalePixelToScreenHeight(gear_text_4);
-
-            --local posX, posY = SpeedMeterDisplay.gearElement:getPosition()
-            --posX = posX + SpeedMeterDisplay.gearElement:getWidth() * 0.5
-            --posY = posY + 0.05;
-
-            -- local y = SpeedMeterDisplay.gearGroupTextPositionY;
-
-            -- print("ExtraGears - Draw: "..tostring(posX).."|"..tostring(posY).."|"..tostring(ExtraGears.shiftGearOverrideAmount));
-            --if 0 == ExtraGears.shiftGearOverrideAmount then
-
-            -- scalePixelToScreenWidth
-
             -- renderText(0.96, 0.01, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
             renderText(ExtraGears.position.x, ExtraGears.position.y, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
             setTextColor(1, 1, 1, 1)
