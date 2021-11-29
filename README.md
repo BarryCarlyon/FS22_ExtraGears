@@ -12,7 +12,8 @@ So for vehicles with more than 8 gears (in either direction) you have to use fla
 
 This mod adds additional Gear Keybindings, up to 18.
 
-Alterantively lets you bind controls for "shift mode"
+Alterantively lets you bind controls for "shift mode", this makes the gearbox similar to Euro Truck Simulator 2.
+
 You can press a button to set various shift increments
 
 For 6 speed shifters
