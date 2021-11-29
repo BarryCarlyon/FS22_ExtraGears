@@ -2,24 +2,118 @@
 -- Extra Gears for FS 22
 --
 -- BarryCarlyon
--- Version 1.0.0.0
+-- Version 1.0.0.1
 --
 
 ExtraGears = {}
 ExtraGears.MOD_NAME = g_currentModName
+-- lets do a config
+ExtraGears.default = {}
+ExtraGears.default.position = {}
+ExtraGears.default.position.x = 0.96
+ExtraGears.default.position.y = 0.01
 
 function ExtraGears.prerequisitesPresent(specializations)
-  return true
+    return true
 end
 
 function ExtraGears.registerEventListeners(vehicleType)
-  print("ExtraGears -- registerEventListeners for ExtraGears" ..tostring(vehicleType));
-  --SpecializationUtil.registerEventListener(vehicleType, "onLoad", ExtraGears)
+    print("ExtraGears -- registerEventListeners for ExtraGears" ..tostring(vehicleType));
+    SpecializationUtil.registerEventListener(vehicleType, "onDraw", ExtraGears)
 end
 
---function ExtraGears:onLoad(savegame)
---  local spec = self.spec_ExtraGears
---end
+function ExtraGears:loadMap(name)
+    print("ExtraGears -- loadMap for ExtraGears");
+    self.position = {}
+    self.position.x = ExtraGears.default.position.x
+    self.position.y = ExtraGears.default.position.y
+
+    if g_dedicatedServerInfo == nil then
+        local xmlFile = getUserProfileAppPath() .. "modSettings/extraGears.xml"
+         if not fileExists(xmlFile) then
+            if not fileExists(xmlFile) then
+                self:defaultXML(xmlFile)
+            end
+            self:loadXML(xmlFile)
+        else
+            self:loadXML(xmlFile)
+        end
+    end
+end
+
+function ExtraGears:loadXML(fileName)
+    print("ExtraGears -- loading XML " ..tostring(fileName));
+    local xml = loadXMLFile("ExtraGears", fileName)
+    local x = Utils.getNoNil(getXMLFloat(xml, "ExtraGears.position#x"), ExtraGears.position.x)
+    if (self:posOK(x)) then
+        self.position.x = x
+    else
+        self.position.x = ExtraGears.default.position.x;
+    end
+    local y = Utils.getNoNil(getXMLFloat(xml, "ExtraGears.position#y"), ExtraGears.position.y)
+    if (self:posOK(y)) then
+        self.position.y = y
+    else
+        self.position.y = ExtraGears.default.position.y;
+    end
+    print("ExtraGears -- loaded " ..tostring(self.position.x) .." " ..tostring(self.position.x))
+end
+
+function ExtraGears:posOK(val)
+    local val = tonumber(float)
+    if val ~= nil and val >= 0 and val <= 1 then
+        return true
+    else
+        return false
+    end
+end
+function ExtraGears:defaultXML(fileName)
+    print("ExtraGears - Make Default Config File " ..tostring(fileName))
+    local xml = createXMLFile("ExtraGears", fileName, "ExtraGears")
+    setXMLFloat(xml, "ExtraGears.position#x", ExtraGears.default.position.x)
+    setXMLFloat(xml, "ExtraGears.position#y", ExtraGears.default.position.y)
+    saveXMLFile(xml)
+    delete(xml)
+end
+
+function ExtraGears:onDraw(dt)
+    -- ExtraGears.shiftGearOverrideAmount
+    -- print("ExtraGears - Draw");
+    if self.isClient then
+        -- print("ExtraGears - Is Client")
+        local vehicle = g_currentMission.controlledVehicle
+        if vehicle ~= nil and vehicle:getIsSynchronized() then
+            if nil == ExtraGears.shiftGearOverrideAmount then
+            ExtraGears.shiftGearOverrideAmount = 0
+            end
+            -- print("ExtraGears - Is sync")
+            -- local spec = vehicle.spec_motorized
+            -- if spec ~= nil and isMotorStarted then
+            --     print("ExtraGears - Is Motor started")
+            -- end
+
+            -- local posX = 0
+            -- local gear_text_4 = SpeedMeterDisplay.POSITION.GEAR_TEXT_3[2] - SpeedMeterDisplay.POSITION.GEAR_TEXT_3[1]
+            -- local posY = g_currentMission.inGameMenu.hud.speedMeter:scalePixelToScreenHeight(gear_text_4);
+
+            --local posX, posY = SpeedMeterDisplay.gearElement:getPosition()
+            --posX = posX + SpeedMeterDisplay.gearElement:getWidth() * 0.5
+            --posY = posY + 0.05;
+
+            -- local y = SpeedMeterDisplay.gearGroupTextPositionY;
+
+            -- print("ExtraGears - Draw: "..tostring(posX).."|"..tostring(posY).."|"..tostring(ExtraGears.shiftGearOverrideAmount));
+            --if 0 == ExtraGears.shiftGearOverrideAmount then
+
+            -- scalePixelToScreenWidth
+
+            -- renderText(0.96, 0.01, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
+            renderText(ExtraGears.position.x, ExtraGears.position.y, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
+            setTextColor(1, 1, 1, 1)
+            setTextAlignment(RenderText.ALIGN_RIGHT)
+        end
+    end
+end
 
 -- inputBindings override Motorized
 function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgnoreSelection)
@@ -142,7 +236,7 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
     end
 end
 
--- do the override step but sanity check it too!
+
 function MotorGearShiftEvent:shiftGearOverrideStep(actionName, keyStatus, shiftAmount, arg4, arg5, two)
   if nil == ExtraGears.lastshiftGearOverrideAmount then
     ExtraGears.lastshiftGearOverrideAmount = 0
@@ -213,3 +307,5 @@ function MotorGearShiftEvent:run(connection)
         end
     end
 end
+
+addModEventListener(ExtraGears);

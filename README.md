@@ -32,6 +32,23 @@ For others, you can flappy paddle the incrementer
 - Shift add 8 - Just add 8 to the gears
 - Shift remove 8 - Just remove 8 to the gears
 
+A on screen Display will below the Gears tell you the current gear offset you have set.
+
 # Install
 
 Get the mod from [ExtraGears on ModHub](https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=225250&title=fs2022)
+
+# Configuration
+
+You can now control where a onscreen gear offseat appears via `FarmingSimulator2022\modSettings\extraGears.xml`
+
+The default is
+
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ExtraGears>
+    <position x="0.960000" y="0.010000"/>
+</ExtraGears>
+```
+
+x/y are percentages from left/bottom of the screen
