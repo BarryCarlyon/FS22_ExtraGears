@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="61">
+    <author>BarryCarlyon</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Extra Gears</en>
+    </title>
+    <description>
+        <en>
+<![CDATA[
+Adds Keybinds for the Missing Gears
+
+Default FS22 only lets you bind Shifters from Gear 1 to Gear 8
+
+Extra Gears adds keybindings up to 18. For direct Shifter access.
+
+Additionally for those with a six or eight speed shifter, you can bind "shift" keys to use the same six or eight to access higher gears. This is similar to other Simulator Games.
+
+You can shift by 6, 12, 18, 8, or 16.
+]]>
+        </en>
+    </description>
+    <multiplayer supported="true"/>
+    <iconFilename>extraGears.dds</iconFilename>
+    <extraSourceFiles>
+        <sourceFile filename="extraGearsRegister.lua" />
+    </extraSourceFiles>
+    <l10n filenamePrefix="l10n/l10n" />
+    <actions>
+        <action name="EXG_GEAR_9" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_10" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_11" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_12" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_13" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_14" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_15" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_16" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_17" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_18" category="VEHICLE" ignoreComboMask="false" />
+
+        <action name="EXG_GEAR_SHIFT_6_UP" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_6_DOWN" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_8_UP" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_8_DOWN" category="VEHICLE" ignoreComboMask="false" />
+
+        <action name="EXG_GEAR_SHIFT_A8" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_B8" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_A6" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_B6" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_SHIFT_C6" category="VEHICLE" ignoreComboMask="false" />
+    </actions>
+    <inputBinding>
+        <actionBinding action="EXG_GEAR_9"></actionBinding>
+        <actionBinding action="EXG_GEAR_10"></actionBinding>
+        <actionBinding action="EXG_GEAR_11"></actionBinding>
+        <actionBinding action="EXG_GEAR_12"></actionBinding>
+        <actionBinding action="EXG_GEAR_13"></actionBinding>
+        <actionBinding action="EXG_GEAR_14"></actionBinding>
+        <actionBinding action="EXG_GEAR_15"></actionBinding>
+        <actionBinding action="EXG_GEAR_16"></actionBinding>
+        <actionBinding action="EXG_GEAR_17"></actionBinding>
+        <actionBinding action="EXG_GEAR_18"></actionBinding>
+
+        <actionBinding action="EXG_GEAR_SHIFT_6_UP"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_6_DOWN"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_8_UP"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_8_DOWN"></actionBinding>
+
+        <actionBinding action="EXG_GEAR_SHIFT_A8"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_B8"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_A6"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_B6"></actionBinding>
+        <actionBinding action="EXG_GEAR_SHIFT_C6"></actionBinding>
+    </inputBinding>
+</modDesc>

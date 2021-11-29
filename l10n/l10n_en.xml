@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="input_EXG_GEAR_9" text="Gear 9"/>
+        <text name="input_EXG_GEAR_10" text="Gear 10"/>
+        <text name="input_EXG_GEAR_11" text="Gear 11"/>
+        <text name="input_EXG_GEAR_12" text="Gear 12"/>
+        <text name="input_EXG_GEAR_13" text="Gear 13"/>
+        <text name="input_EXG_GEAR_14" text="Gear 14"/>
+        <text name="input_EXG_GEAR_15" text="Gear 15"/>
+        <text name="input_EXG_GEAR_16" text="Gear 16"/>
+        <text name="input_EXG_GEAR_17" text="Gear 17"/>
+        <text name="input_EXG_GEAR_18" text="Gear 18"/>
+
+        <text name="input_EXG_GEAR_SHIFT_6_UP" text="Gear Shift UP 6"/>
+        <text name="input_EXG_GEAR_SHIFT_6_DOWN" text="Gear Shift DOWN 6"/>
+        <text name="input_EXG_GEAR_SHIFT_8_UP" text="Gear Shift UP 8"/>
+        <text name="input_EXG_GEAR_SHIFT_8_DOWN" text="Gear Shift DOWN 8"/>
+
+        <text name="input_EXG_GEAR_SHIFT_A8" text="Gear Shift to A (+8 to all gears)"/>
+        <text name="input_EXG_GEAR_SHIFT_B8" text="Gear Shift to B (+16 to all gears)"/>
+        <text name="input_EXG_GEAR_SHIFT_A6" text="Gear Shift to A (+6 to all gears)"/>
+        <text name="input_EXG_GEAR_SHIFT_B6" text="Gear Shift to B (+12 to all gears)"/>
+        <text name="input_EXG_GEAR_SHIFT_C6" text="Gear Shift to C (+18 to all gears)"/>
+    </texts>
+</l10n>
