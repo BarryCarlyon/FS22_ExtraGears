@@ -142,10 +142,13 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
     end
 end
 
-
+-- do the override step but sanity check it too!
 function MotorGearShiftEvent:shiftGearOverrideStep(actionName, keyStatus, shiftAmount, arg4, arg5, two)
   if nil == ExtraGears.lastshiftGearOverrideAmount then
     ExtraGears.lastshiftGearOverrideAmount = 0
+  end
+  if nil == ExtraGears.shiftGearOverrideAmount then
+    ExtraGears.shiftGearOverrideAmount = 0
   end
   ExtraGears.shiftGearOverrideAmount = ExtraGears.shiftGearOverrideAmount + shiftAmount
   if ExtraGears.shiftGearOverrideAmount < 0 then

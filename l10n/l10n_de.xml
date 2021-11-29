@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="input_EXG_GEAR_9" text="9. Gang"/>
+        <text name="input_EXG_GEAR_10" text="10. Gang"/>
+        <text name="input_EXG_GEAR_11" text="11. Gang"/>
+        <text name="input_EXG_GEAR_12" text="12. Gang"/>
+        <text name="input_EXG_GEAR_13" text="13. Gang"/>
+        <text name="input_EXG_GEAR_14" text="14. Gang"/>
+        <text name="input_EXG_GEAR_15" text="15. Gang"/>
+        <text name="input_EXG_GEAR_16" text="16. Gang"/>
+        <text name="input_EXG_GEAR_17" text="17. Gang"/>
+        <text name="input_EXG_GEAR_18" text="18. Gang"/>
+
+        <text name="input_EXG_GEAR_SHIFT_6_UP" text="6 Gänge HOCH schalten"/>
+        <text name="input_EXG_GEAR_SHIFT_6_DOWN" text="6 Gänge RUNTER schalten"/>
+        <text name="input_EXG_GEAR_SHIFT_8_UP" text="8 Gänge HOCH schalten"/>
+        <text name="input_EXG_GEAR_SHIFT_8_DOWN" text="8 Gänge RUNTER schalten"/>
+
+        <text name="input_EXG_GEAR_SHIFT_A8" text="Gänge auf A schalten (alle Gänge +8)"/>
+        <text name="input_EXG_GEAR_SHIFT_B8" text="Gänge auf B schalten (alle Gänge +16)"/>
+        <text name="input_EXG_GEAR_SHIFT_A6" text="Gänge auf A schalten (alle Gänge +6)"/>
+        <text name="input_EXG_GEAR_SHIFT_B6" text="Gänge auf B schalten (alle Gänge +12)"/>
+        <text name="input_EXG_GEAR_SHIFT_C6" text="Gänge auf C schalten (alle Gänge +18)"/>
+    </texts>
+</l10n>
