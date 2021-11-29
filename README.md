@@ -30,3 +30,7 @@ For others, you can flappy paddle the incrementer
 - Shift remove 6 - Just remove 6 to the gears
 - Shift add 8 - Just add 8 to the gears
 - Shift remove 8 - Just remove 8 to the gears
+
+# Install
+
+Get the mod from [ExtraGears on ModHub](https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=225250&title=fs2022)
