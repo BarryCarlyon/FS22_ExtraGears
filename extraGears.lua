@@ -94,6 +94,7 @@ function ExtraGears:onDraw(dt)
     end
 end
 
+-- dataS/scripts/vehicles/specializations/Motorized.lua
 -- inputBindings override Motorized
 function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgnoreSelection)
     if self.isClient then
@@ -108,7 +109,6 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
             if spec.motor.minForwardGearRatio == nil or spec.motor.minBackwardGearRatio == nil then
                 if self:getGearShiftMode() ~= VehicleMotor.SHIFT_MODE_AUTOMATIC or not GS_IS_CONSOLE_VERSION then
                     if spec.motor.manualShiftGears then
-                        print("ExtraGears -- Override Motorized:onRegisterActionEvents")
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.SHIFT_GEAR_UP, self, Motorized.actionEventShiftGear, false, true, false, true, nil)
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.SHIFT_GEAR_DOWN, self, Motorized.actionEventShiftGear, false, true, false, true, nil)
@@ -131,6 +131,8 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.SHIFT_GEAR_SELECT_8, self, Motorized.actionEventSelectGear, true, true, true, true, 8)
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
 
+                        print("ExtraGears -- Override Motorized:onRegisterActionEvents for vehicle motor registration 9->18")
+                        -- add 9 -> 18
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_9, self, Motorized.actionEventSelectGear, true, true, true, true, 9)
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_10, self, Motorized.actionEventSelectGear, true, true, true, true, 10)
@@ -153,29 +155,6 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_18, self, Motorized.actionEventSelectGear, true, true, true, true, 18)
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_6_UP, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, 6)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_6_DOWN, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, -6)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_8_UP, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, 8)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_8_DOWN, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, -8)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-
-
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_A8, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 8)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_B8, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 16)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_A6, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 6)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_B6, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 12)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_C6, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 18)
-                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
-
                     end
 
                     if spec.motor.manualShiftGroups then
@@ -198,6 +177,30 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
 
                     _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.AXIS_CLUTCH_VEHICLE, self, Motorized.actionEventClutch, false, false, true, true, nil)
                     g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+
+                    print("ExtraGears -- Override Motorized:onRegisterActionEvents for vehicle motor registration -> shift groups")
+                    -- add the shifter groups
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_6_UP, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, 6)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_6_DOWN, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, -6)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_8_UP, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, 8)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_8_DOWN, self, MotorGearShiftEvent.shiftGearOverrideStep, false, true, false, true, -8)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+
+
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_A8, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 8)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_B8, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 16)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_A6, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 6)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_B6, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 12)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                    _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_SHIFT_C6, self, MotorGearShiftEvent.shiftGearOverride, false, true, false, true, 18)
+                    g_inputBinding:setActionEventTextVisibility(actionEventId, false)
                 end
             end
 
@@ -215,41 +218,96 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
     end
 end
 
-
+-- dataS\scripts\vehicles\specializations\events\MotorGearShiftEvent.lua
 function MotorGearShiftEvent:shiftGearOverrideStep(actionName, keyStatus, shiftAmount, arg4, arg5, two)
-  if nil == ExtraGears.lastshiftGearOverrideAmount then
-    ExtraGears.lastshiftGearOverrideAmount = 0
-  end
-  if nil == ExtraGears.shiftGearOverrideAmount then
-    ExtraGears.shiftGearOverrideAmount = 0
-  end
-  ExtraGears.shiftGearOverrideAmount = ExtraGears.shiftGearOverrideAmount + shiftAmount
-  if ExtraGears.shiftGearOverrideAmount < 0 then
-    ExtraGears.shiftGearOverrideAmount = 0
-  end
-  -- probably need to add a cap
-  -- this needs more thought
-  -- 21 is 3 x 8
-  if ExtraGears.shiftGearOverrideAmount >= 24 then
-    ExtraGears.shiftGearOverrideAmount = 0
-  end
+    print("ExtraGears -- shift add/remove" ..tostring(shiftAmount));
+    if nil == ExtraGears.lastshiftGearOverrideAmount then
+        ExtraGears.lastshiftGearOverrideAmount = 0
+    end
+    if nil == ExtraGears.shiftGearOverrideAmount then
+        ExtraGears.shiftGearOverrideAmount = 0
+    end
+    ExtraGears.shiftGearOverrideAmount = ExtraGears.shiftGearOverrideAmount + shiftAmount
+    if ExtraGears.shiftGearOverrideAmount < 0 then
+        ExtraGears.shiftGearOverrideAmount = 0
+    end
+    -- probably need to add a cap
+    -- this needs more thought
+    -- 21 is 3 x 8
+    if ExtraGears.shiftGearOverrideAmount >= 24 then
+        ExtraGears.shiftGearOverrideAmount = 0
+    end
 end
+
 -- keyStatus 1 down
 -- keyStatus 0 released
 function MotorGearShiftEvent:shiftGearOverride(actionName, keyStatus, shiftAmount, arg4, arg5, two)
-  --print("ExtraGears -- shift amount " ..tostring(actionName) .." " ..tostring(keyStatus) .." " ..tostring(shiftAmount) .." " ..tostring(arg4) .." " ..tostring(arg5) .." " ..tostring(two))
+    --print("ExtraGears -- shift amount " ..tostring(actionName) .." " ..tostring(keyStatus) .." " ..tostring(shiftAmount) .." " ..tostring(arg4) .." " ..tostring(arg5) .." " ..tostring(two))
 
-  --local spec = self.spec_ExtraGears
-  if nil == ExtraGears.lastshiftGearOverrideAmount then
-    ExtraGears.shiftGearOverrideAmount = shiftAmount
-  elseif ExtraGears.lastshiftGearOverrideAmount == shiftAmount then
-    ExtraGears.shiftGearOverrideAmount = 0;
-  else
-    ExtraGears.shiftGearOverrideAmount = shiftAmount
-  end
-  print("ExtraGears -- shift amount now " ..tostring(ExtraGears.shiftGearOverrideAmount))
-  ExtraGears.lastshiftGearOverrideAmount = ExtraGears.shiftGearOverrideAmount
+    --local spec = self.spec_ExtraGears
+    if nil == ExtraGears.lastshiftGearOverrideAmount then
+        ExtraGears.shiftGearOverrideAmount = shiftAmount
+    elseif ExtraGears.lastshiftGearOverrideAmount == shiftAmount then
+        ExtraGears.shiftGearOverrideAmount = 0;
+    else
+        ExtraGears.shiftGearOverrideAmount = shiftAmount
+    end
+    print("ExtraGears -- shift amount now " ..tostring(ExtraGears.shiftGearOverrideAmount))
+    ExtraGears.lastshiftGearOverrideAmount = ExtraGears.shiftGearOverrideAmount
 end
+
+
+---Broadcast event from server to all clients, if called on client call function on server and broadcast it to all clients
+-- @param table vehicle vehicle
+-- @param integer shiftType type of shifting event
+-- @param integer shiftValue additional value for shifting event
+function MotorGearShiftEvent.sendEvent(vehicle, shiftType, shiftValue)
+    if g_client ~= nil then
+        if shiftType == MotorGearShiftEvent.TYPE_SELECT_GEAR then
+            --sanity check
+            if nill == ExtraGears.shiftGearOverrideAmount then
+                ExtraGears.shiftGearOverrideAmount = 0
+            end
+            -- print("ExtraGears - in shiftevent sendEvent - " ..tostring(shiftValue) .." | " ..tostring(ExtraGears.shiftGearOverrideAmount));
+            -- is the stick in neutral?
+            -- only bump if not in neutral
+            if shiftValue > 0 then
+                shiftValue = shiftValue + ExtraGears.shiftGearOverrideAmount;
+            end
+            -- print("ExtraGears - in shiftevent resolved " ..tostring(shiftValue));
+        end
+
+        g_client:getServerConnection():sendEvent(MotorGearShiftEvent.new(vehicle, shiftType, shiftValue))
+    end
+end
+
+---Called on client side on join
+-- @param integer streamId streamId
+-- @param integer connection connection
+function MotorGearShiftEvent:readStream(streamId, connection)
+    self.vehicle = NetworkUtil.readNodeObject(streamId)
+    self.shiftType = streamReadUIntN(streamId, 4)
+
+    if self.shiftType == MotorGearShiftEvent.TYPE_SELECT_GEAR or self.shiftType == MotorGearShiftEvent.TYPE_SELECT_GROUP then
+        self.shiftValue = streamReadUIntN(streamId, 5)
+    end
+
+    self:run(connection)
+end
+
+
+---Called on server side on join
+-- @param integer streamId streamId
+-- @param integer connection connection
+function MotorGearShiftEvent:writeStream(streamId, connection)
+    NetworkUtil.writeNodeObject(streamId, self.vehicle)
+    streamWriteUIntN(streamId, self.shiftType, 4)
+
+    if self.shiftType == MotorGearShiftEvent.TYPE_SELECT_GEAR or self.shiftType == MotorGearShiftEvent.TYPE_SELECT_GROUP then
+        streamWriteUIntN(streamId, self.shiftValue, 5)
+    end
+end
+
 
 function MotorGearShiftEvent:run(connection)
     if self.vehicle ~= nil and self.vehicle:getIsSynchronized() then
@@ -260,15 +318,7 @@ function MotorGearShiftEvent:run(connection)
             elseif self.shiftType == MotorGearShiftEvent.TYPE_SHIFT_DOWN then
                 spec.motor:shiftGear(false)
             elseif self.shiftType == MotorGearShiftEvent.TYPE_SELECT_GEAR then
-                if nill == ExtraGears.shiftGearOverrideAmount then
-                    ExtraGears.shiftGearOverrideAmount = 0
-                end
-                -- is the stick in neutral?
-                -- only bump if not in neutral
-                if self.shiftValue > 0 then
-                  self.shiftValue = self.shiftValue + ExtraGears.shiftGearOverrideAmount;
-                end
-                -- print("ExtraGears -- shift to " ..tostring(self.shiftValue))
+                -- print("ExtraGears - setting " ..tostring(self.shiftValue))
                 spec.motor:selectGear(self.shiftValue, self.shiftValue ~= 0)
             elseif self.shiftType == MotorGearShiftEvent.TYPE_SHIFT_GROUP_UP then
                 spec.motor:shiftGroup(true)
@@ -286,5 +336,7 @@ function MotorGearShiftEvent:run(connection)
         end
     end
 end
+
+
 
 addModEventListener(ExtraGears);
