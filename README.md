@@ -37,7 +37,7 @@ A on screen Display will below the Gears tell you the current gear offset you ha
 
 This mod additionally adds Gear Groups 5/6 for binding as needed!
 
-![Example Screenshot of a Mack Truck with a +6 Modifier](/screenshot/screenshot2.png?raw=true "Example Screenshot of a Mack Truck with a +6 Modifier")
+![Example Screenshot of a Mack Truck with a +6 Modifier](/screenshots/screenshot2.png?raw=true "Example Screenshot of a Mack Truck with a +6 Modifier")
 
 # Install
 
