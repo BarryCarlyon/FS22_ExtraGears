@@ -60,6 +60,12 @@ The default is
 
 x/y are percentages from left/bottom of the screen
 
+# Submit a translation
+
+Please Open a Pull Request with the new/updated `i10n` file and updated `modDesc.xml` with updated Name and Description!
+
+I believe FS uses the 2 letter language codes, see 639-1 from [Wikipedia](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+
 # Change Log
 
 ## 29th November 2021 v1.0.0.0
