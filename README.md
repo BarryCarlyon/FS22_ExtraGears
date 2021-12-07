@@ -5,8 +5,9 @@ And if you set the game to `manual` or `manual with clutch` allows for a more re
 
 The game only allows you to bind
 
-- flappy paddle gear up/down
-- gears 1-8
+- Flappy paddle gear up/down
+- Gears 1-8
+- Gear Groups 1-4
 
 So for vehicles with more than 8 gears (in either direction) you have to use flappy paddle.
 
@@ -33,6 +34,8 @@ For others, you can flappy paddle the incrementer
 - Shift remove 8 - Just remove 8 to the gears
 
 A on screen Display will below the Gears tell you the current gear offset you have set.
+
+This mod additionally adds Gear Groups 5/6 for binding as needed!
 
 # Install
 
