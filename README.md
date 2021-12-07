@@ -62,9 +62,34 @@ x/y are percentages from left/bottom of the screen
 
 # Submit a translation
 
-Please Open a Pull Request with the new/updated `i10n` file and updated `modDesc.xml` with updated Name and Description!
+Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and updated `modDesc.xml` with updated Name and Description!
 
-I believe FS uses the 2 letter language codes, see 639-1 from [Wikipedia](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+| Code | Lang | Status |
+| ---- | ---- | ------ |
+| en   | English  | Complete |
+| de   | German | Complete |
+| fr   | French | Missing |
+| jp   | Japanese | Missing |
+| pl   | Polish | Missing |
+| cz   | Czech | Missing |
+| es   | Spanish | Missing |
+| ru   | Russian | Missing |
+| it   | Italian | Missing |
+| pt   | Portuguese | Missing |
+| hu   | Hungarian | Missing |
+| nl   | Dutch | Missing |
+| cs   | Simplified Chinese | Missing |
+| ct   | Traditional Chinese | Missing |
+| br   | Breton | Missing |
+| tr   | Turkish | Missing |
+| ro   | Romanian | Missing |
+| kr   | Korean  | Missing |
+| da   | Danish | Missing |
+| fi   | Finnish | Missing |
+| no   | Norwegian | Missing |
+| sv   | Swedish | Missing |
+| fc   | ? | Missing |
+
 
 # Change Log
 
@@ -80,3 +105,4 @@ I believe FS uses the 2 letter language codes, see 639-1 from [Wikipedia](https:
 ## Pending after v1.0.0.2 clears
 
 - Added Gear Groups 5/6 as per `SentinelMantik` report
+- Revise the readme and added notes on submitting a translation
