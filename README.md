@@ -88,7 +88,7 @@ Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and up
 | fi   | Finnish | Missing |
 | no   | Norwegian | Missing |
 | sv   | Swedish | Missing |
-| fc   | ? | Missing |
+| fc   | French Canadian | Missing |
 
 
 # Change Log
