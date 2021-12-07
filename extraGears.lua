@@ -172,6 +172,13 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
                             g_inputBinding:setActionEventTextVisibility(actionEventId, false)
                             _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.SHIFT_GROUP_SELECT_4, self, Motorized.actionEventSelectGroup, true, true, true, true, 4)
                             g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+
+                            -- add gear group 5/6 c/o SentinelMantik
+                            print("ExtraGears -- Override Motorized:onRegisterActionEvents for vehicle motor registration geargroup")
+                            _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GRP_5, self, Motorized.actionEventSelectGroup, true, true, true, true, 5)
+                            g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                            _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GRP_6, self, Motorized.actionEventSelectGroup, true, true, true, true, 6)
+                            g_inputBinding:setActionEventTextVisibility(actionEventId, false)
                         end
                     end
 

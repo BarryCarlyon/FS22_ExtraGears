@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="61">
     <author>BarryCarlyon</author>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <title>
         <en>Extra Gears</en>
         <de>Weitere Gänge</de>
@@ -12,7 +12,7 @@ Adds Keybinds for the Missing Gears
 
 Default FS22 only lets you bind Shifters from Gear 1 to Gear 8
 
-Extra Gears adds keybindings up to 18. For direct Shifter access.
+Extra Gears adds keybindings up to 18. For direct Shifter access and adds Gear Groups 5 and 6.
 
 Additionally for those with a six or eight speed shifter, you can bind "shift" keys to use the same six or eight to access higher gears. This is similar to other Simulator Games.
 
@@ -25,7 +25,7 @@ Fügt Tastenbelegungen für die fehlenden Gänge hinzu
 
 Standard FS22 lässt nur Schalten in die Gänge 1 bis 8 zu
 
-Weitere Gänge fügt Tastenbelegungen für bis zum 18. Gang hinzu. Für direkten Schaltungs Zugriff.
+Weitere Gänge fügt Tastenbelegungen für bis zum 18. Gang hinzu. Für direkten Schaltungs Zugriff, und Gänge Gruppe 5 und 6.
 
 Für alle mit einer sechs- oder achtfach SchaltungWeiterhin kann ausserdem "Shift" belegt werden, um die Selben sechs oder acht Gänge auch zur Schaltung in die höheren Gänge zu nutzen. Ähnlich wie bei anderen Simulationsspielen.
 
@@ -51,6 +51,9 @@ Unterstützt jetzt den Multiplayer korrekt.
         <action name="EXG_GEAR_16" category="VEHICLE" ignoreComboMask="false" />
         <action name="EXG_GEAR_17" category="VEHICLE" ignoreComboMask="false" />
         <action name="EXG_GEAR_18" category="VEHICLE" ignoreComboMask="false" />
+
+        <action name="EXG_GRP_5" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GRP_6" category="VEHICLE" ignoreComboMask="false" />
 
         <action name="EXG_GEAR_SHIFT_6_UP" category="VEHICLE" ignoreComboMask="false" />
         <action name="EXG_GEAR_SHIFT_6_DOWN" category="VEHICLE" ignoreComboMask="false" />

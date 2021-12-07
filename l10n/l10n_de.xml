@@ -12,6 +12,9 @@
         <text name="input_EXG_GEAR_17" text="17. Gang"/>
         <text name="input_EXG_GEAR_18" text="18. Gang"/>
 
+        <text name="input_EXG_GRP_5" text="5. Gruppe"/>
+        <text name="input_EXG_GRP_6" text="6. Gruppe"/>
+
         <text name="input_EXG_GEAR_SHIFT_6_UP" text="6 Gänge HOCH schalten"/>
         <text name="input_EXG_GEAR_SHIFT_6_DOWN" text="6 Gänge RUNTER schalten"/>
         <text name="input_EXG_GEAR_SHIFT_8_UP" text="8 Gänge HOCH schalten"/>

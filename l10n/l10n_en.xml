@@ -12,6 +12,9 @@
         <text name="input_EXG_GEAR_17" text="Gear 17"/>
         <text name="input_EXG_GEAR_18" text="Gear 18"/>
 
+        <text name="input_EXG_GRP_5" text="Gear Group 5"/>
+        <text name="input_EXG_GRP_6" text="Gear Group 6"/>
+
         <text name="input_EXG_GEAR_SHIFT_6_UP" text="Gear Shift UP 6"/>
         <text name="input_EXG_GEAR_SHIFT_6_DOWN" text="Gear Shift DOWN 6"/>
         <text name="input_EXG_GEAR_SHIFT_8_UP" text="Gear Shift UP 8"/>

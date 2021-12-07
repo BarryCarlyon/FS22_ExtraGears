@@ -52,3 +52,18 @@ The default is
 ```
 
 x/y are percentages from left/bottom of the screen
+
+# Change Log
+
+## 29th November 2021 v1.0.0.0
+
+- Initial release supporting extra gear binds and shifting of.
+
+## Pending 8th December 2021 v1.0.0.1
+
+- Fixed Multiplayer Supports
+- Added a on screen Display (bottom right) of the current gear shift value
+
+## Pending after v1.0.0.2 clears
+
+- Added Gear Groups 5/6 as per `SentinelMantik` report
