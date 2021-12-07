@@ -43,7 +43,7 @@ This mod additionally adds Gear Groups 5/6 for binding as needed!
 
 Get the mod from [ExtraGears on ModHub](https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=225250&title=fs2022)
 
-Or checkout out a Pre Release from [GitHub Releases](releases)
+Or checkout out a Pre Release from [GitHub Releases](https://github.com/BarryCarlyon/FS22_ExtraGears/releases)
 
 # Configuration
 
