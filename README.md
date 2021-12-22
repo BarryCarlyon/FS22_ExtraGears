@@ -71,7 +71,7 @@ Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and up
 | fr   | French | Missing |
 | jp   | Japanese | Missing |
 | pl   | Polish | Missing |
-| cz   | Czech | Missing |
+| cz   | Czech | win 1.0.0.2 |
 | es   | Spanish | Missing |
 | ru   | Russian | Missing |
 | it   | Italian | Missing |
