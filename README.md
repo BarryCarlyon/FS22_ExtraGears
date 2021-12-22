@@ -97,7 +97,7 @@ Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and up
 
 - Initial release supporting extra gear binds and shifting of.
 
-## Pending 8th December 2021 v1.0.0.1
+## 22nd December 2021 v1.0.0.1
 
 - Fixed Multiplayer Supports
 - Added a on screen Display (bottom right) of the current gear shift value
