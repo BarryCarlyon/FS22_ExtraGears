@@ -102,7 +102,8 @@ Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and up
 - Fixed Multiplayer Supports
 - Added a on screen Display (bottom right) of the current gear shift value
 
-## Pending after v1.0.0.2 clears
+## Pending after v1.0.0.1 clears
 
 - Added Gear Groups 5/6 as per `SentinelMantik` report
 - Revise the readme and added notes on submitting a translation
+- Added Czech translation 
