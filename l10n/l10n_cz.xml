@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="input_EXG_GEAR_9" text="Stupeň 9"/>
+        <text name="input_EXG_GEAR_10" text="Stupeň 10"/>
+        <text name="input_EXG_GEAR_11" text="Stupeň 11"/>
+        <text name="input_EXG_GEAR_12" text="Stupeň 12"/>
+        <text name="input_EXG_GEAR_13" text="Stupeň 13"/>
+        <text name="input_EXG_GEAR_14" text="Stupeň 14"/>
+        <text name="input_EXG_GEAR_15" text="Stupeň 15"/>
+        <text name="input_EXG_GEAR_16" text="Stupeň 16"/>
+        <text name="input_EXG_GEAR_17" text="Stupeň 17"/>
+        <text name="input_EXG_GEAR_18" text="Stupeň 18"/>
+
+        <text name="input_EXG_GRP_5" text="Skupina stupňů 5"/>
+        <text name="input_EXG_GRP_6" text="Skupina stupňů 6"/>
+
+        <text name="input_EXG_GEAR_SHIFT_6_UP" text="Přeřadit nahoru o 6"/>
+        <text name="input_EXG_GEAR_SHIFT_6_DOWN" text="Přeřadit dolu o 6"/>
+        <text name="input_EXG_GEAR_SHIFT_8_UP" text="Přeřadit nahoru o 8"/>
+        <text name="input_EXG_GEAR_SHIFT_8_DOWN" text="Přeřadit dolu o 8"/>
+
+        <text name="input_EXG_GEAR_SHIFT_A8" text="Zařadit A (+8 ke všem stupňům)"/>
+        <text name="input_EXG_GEAR_SHIFT_B8" text="Zařadit B (+16 ke všem stupňům)"/>
+        <text name="input_EXG_GEAR_SHIFT_A6" text="Zařadit A (+6 ke všem stupňům)"/>
+        <text name="input_EXG_GEAR_SHIFT_B6" text="Zařadit B (+12 ke všem stupňům)"/>
+        <text name="input_EXG_GEAR_SHIFT_C6" text="Zařadit C (+18 ke všem stupňům)"/>
+    </texts>
+</l10n>

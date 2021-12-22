@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="61">
     <author>BarryCarlyon</author>
-    <version>1.0.0.2</version>
+    <version>1.0.0.3</version>
     <title>
         <en>Extra Gears</en>
         <de>Weitere Gänge</de>
+	<cz>Extra rychlostní stupně</cz>
     </title>
     <description>
         <en><![CDATA[
@@ -33,6 +34,19 @@ Es kann um 6, 12, 18, 8, or 16 Gänge geschaltet werden.
 
 Unterstützt jetzt den Multiplayer korrekt.
 ]]></de>
+	<cz><![CDATA[
+Přidává zkratky pro chybějící rychlostní stupně
+
+Základní hra umožňuje pouze řazení od prvního stupně do osmého
+
+Mod Extra rychlostní stupně přivádá možnost až do 18. Pro přímý přístup řazení přidává skupiny 5 a 6 pro využtí vašeho hardwaru.
+
+Navíc pro ty, kteří mají šesti nebo osmi rychlostní řadící páku, můžete vytvořit zkratku pro použití stejných stupňů k přístupu do vyšších stupňů. Tak jako jste zvyklí z jiných simulátorů.
+
+Nyní můžete řadit po 6, 12, 18, 8 nebo 16.
+
+Nyní také s podporou Multiplayeru.
+]]></cz>
     </description>
     <multiplayer supported="true"/>
     <iconFilename>extraGears.dds</iconFilename>
