@@ -11,7 +11,7 @@ The game only allows you to bind
 
 So for vehicles with more than 8 gears (in either direction) you have to use flappy paddle.
 
-This mod adds additional Gear Keybindings, up to 18.
+This mod adds additional Gear Keybindings, up to 18, and Gear Groups 5-6
 
 Alterantively lets you bind controls for "shift mode", this makes the gearbox similar to Euro Truck Simulator 2.
 
