@@ -48,7 +48,7 @@ Nyní můžete řadit po 6, 12, 18, 8 nebo 16.
 
 Nyní také s podporou Multiplayeru.
 ]]></cz>
-        <en><![CDATA[
+        <it><![CDATA[
 Aggiunge combinazioni di tasti per le marce mancanti
 
 L'FS22 predefinito ti consente solo di associare i cambi da marcia 1 a marcia 8
@@ -60,7 +60,7 @@ Inoltre, per quelli con un cambio a sei o otto velocità, puoi associare i tasti
 Puoi cambiare di 6, 12, 18, 8 o 16.
 
 Ora supporta correttamente il multiplayer.
-]]></en>
+]]></it>
     </description>
     <multiplayer supported="true"/>
     <iconFilename>extraGears.dds</iconFilename>
