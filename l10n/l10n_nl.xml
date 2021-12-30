@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+        <text name="input_EXG_GEAR_9" text="Versnelling 9"/>
+        <text name="input_EXG_GEAR_10" text="Versnelling 10"/>
+        <text name="input_EXG_GEAR_11" text="Versnelling 11"/>
+        <text name="input_EXG_GEAR_12" text="Versnelling 12"/>
+        <text name="input_EXG_GEAR_13" text="Versnelling 13"/>
+        <text name="input_EXG_GEAR_14" text="Versnelling 14"/>
+        <text name="input_EXG_GEAR_15" text="Versnelling 15"/>
+        <text name="input_EXG_GEAR_16" text="Versnelling 16"/>
+        <text name="input_EXG_GEAR_17" text="Versnelling 17"/>
+        <text name="input_EXG_GEAR_18" text="Versnelling 18"/>
+
+        <text name="input_EXG_GRP_5" text="Versnellingsgroep 5"/>
+        <text name="input_EXG_GRP_6" text="Versnellingsgroep 6"/>
+
+        <text name="input_EXG_GEAR_SHIFT_6_UP" text="6 versnellingen opschakelen"/>
+        <text name="input_EXG_GEAR_SHIFT_6_DOWN" text="6 versnellingen terugschakelen"/>
+        <text name="input_EXG_GEAR_SHIFT_8_UP" text="8 versnellingen opschakelen"/>
+        <text name="input_EXG_GEAR_SHIFT_8_DOWN" text="8 versnellingen terugschakelen"/>
+
+        <text name="input_EXG_GEAR_SHIFT_A8" text="Schakel over naar A (+8 op alle versnellingen)"/>
+        <text name="input_EXG_GEAR_SHIFT_B8" text="Schakel over naar B (+16 op alle versnellingen)"/>
+        <text name="input_EXG_GEAR_SHIFT_A6" text="Schakel over naar A (+6 op alle versnellingen)"/>
+        <text name="input_EXG_GEAR_SHIFT_B6" text="Schakel over naar B (+12 op alle versnellingen)"/>
+        <text name="input_EXG_GEAR_SHIFT_C6" text="Schakel over naar C (+18 op alle versnellingen)"/>
+    </texts>
+</l10n>

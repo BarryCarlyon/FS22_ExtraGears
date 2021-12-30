@@ -7,6 +7,7 @@
         <de>Weitere Gänge</de>
 	<cz>Extra rychlostní stupně</cz>
         <it>Marce Extra</it>
+        <nl>Extra versnellingen</nl>
     </title>
     <description>
         <en><![CDATA[
@@ -61,6 +62,19 @@ Puoi cambiare di 6, 12, 18, 8 o 16.
 
 Ora supporta correttamente il multiplayer.
 ]]></it>
+        <nl><![CDATA[
+Voegt toetsencombinaties toe voor de missende versnellingen.
+
+Standaard laat FS22 je alleen versnellingspoken aan de 1e tot 8e versnelling verbinden.
+
+Extra versnellingen voegt toetsencombinaties tot de 18e versnelling toe voor directe versnellingspook toegang en versnellingsgroepen 5 en 6.
+
+Aanvullend voor de gene met zes of acht versnellingspook, Je kan "shift" toetsen verbinden om de zelfde zes of acht hogere versnellingen te gebruiken. Dit is vergelijkbaar met hoe het in andere Simulator spellen word gedaan.
+
+Je kan per 6, 12, 18, 8, of 16 schakelen.
+
+Ondersteund nu mutiplayer correct
+]]></nl>
     </description>
     <multiplayer supported="true"/>
     <iconFilename>extraGears.dds</iconFilename>
