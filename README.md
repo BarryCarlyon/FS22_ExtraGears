@@ -77,7 +77,7 @@ Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and up
 | it   | Italian | with 1.0.0.2 |
 | pt   | Portuguese | Missing |
 | hu   | Hungarian | Missing |
-| nl   | Dutch | Missing |
+| nl   | Dutch | with 1.0.0.2 |
 | cs   | Simplified Chinese | Missing |
 | ct   | Traditional Chinese | Missing |
 | br   | Breton | Missing |
