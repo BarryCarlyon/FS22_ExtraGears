@@ -120,6 +120,9 @@ Ondersteund nu mutiplayer correct
         <actionBinding action="EXG_GEAR_17"></actionBinding>
         <actionBinding action="EXG_GEAR_18"></actionBinding>
 
+        <actionBinding action="EXG_GRP_5"></actionBinding>
+        <actionBinding action="EXG_GRP_6"></actionBinding>
+
         <actionBinding action="EXG_GEAR_SHIFT_6_UP"></actionBinding>
         <actionBinding action="EXG_GEAR_SHIFT_6_DOWN"></actionBinding>
         <actionBinding action="EXG_GEAR_SHIFT_8_UP"></actionBinding>
