@@ -43,7 +43,8 @@ function ExtraGears:loadMap(name)
 end
 
 function ExtraGears:loadXML(fileName)
-    print("ExtraGears -- loading XML " ..tostring(fileName));
+    -- My Games\FarmingSimulator2022\modSettings
+    -- print("ExtraGears -- loading XML " ..tostring(fileName));
     local xml = loadXMLFile("ExtraGears", fileName)
     local x = Utils.getNoNil(getXMLFloat(xml, "ExtraGears.position#x"), ExtraGears.position.x)
     if (self:posOK(x)) then
@@ -57,9 +58,14 @@ function ExtraGears:loadXML(fileName)
     else
         self.position.y = ExtraGears.default.position.y;
     end
-    self.showzero = getXMLBool(xml, "ExtraGears.showzero");
+    local showzero = getXMLBool(xml, "ExtraGears.showzero")
+    if nil == showzero then
+        self.showzero = ExtraGears.default.showzero;
+    else
+        self.showzero = showzero;
+    end
 
-    print("ExtraGears -- loaded " ..tostring(self.position.x) .." " ..tostring(self.position.x))
+    -- print("ExtraGears -- loaded " ..tostring(self.position.x) .." " ..tostring(self.position.x))
 end
 
 function ExtraGears:posOK(val)
@@ -71,7 +77,7 @@ function ExtraGears:posOK(val)
     end
 end
 function ExtraGears:defaultXML(fileName)
-    print("ExtraGears - Make Default Config File " ..tostring(fileName))
+    -- print("ExtraGears - Make Default Config File " ..tostring(fileName))
     local xml = createXMLFile("ExtraGears", fileName, "ExtraGears")
     setXMLFloat(xml, "ExtraGears.position#x", ExtraGears.default.position.x)
     setXMLFloat(xml, "ExtraGears.position#y", ExtraGears.default.position.y)
