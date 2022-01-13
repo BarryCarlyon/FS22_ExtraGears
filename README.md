@@ -1,3 +1,8 @@
+# Please note
+
+In the current game patch, Giants messed with how "Default Gears" works.
+As a result, the mod is completely broken!
+
 # FS22_ExtraGears
 
 FS22 allows you to bind gears to keybinds.
