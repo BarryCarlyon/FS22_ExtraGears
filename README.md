@@ -1,6 +1,6 @@
 # Please note
 
-In the current game patch, Giants messed with how "Default Gears" works.
+In the current game patch (1.2.0.0), Giants messed with how "Default Gears" works.
 As a result, the mod is completely broken!
 
 # FS22_ExtraGears
