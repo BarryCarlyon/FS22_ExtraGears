@@ -12,6 +12,7 @@ ExtraGears.default = {}
 ExtraGears.default.position = {}
 ExtraGears.default.position.x = 0.96
 ExtraGears.default.position.y = 0.01
+ExtraGears.default.showzero = true
 
 function ExtraGears.prerequisitesPresent(specializations)
     return true
@@ -56,6 +57,8 @@ function ExtraGears:loadXML(fileName)
     else
         self.position.y = ExtraGears.default.position.y;
     end
+    self.showzero = getXMLBool(xml, "ExtraGears.showzero");
+
     print("ExtraGears -- loaded " ..tostring(self.position.x) .." " ..tostring(self.position.x))
 end
 
@@ -72,6 +75,7 @@ function ExtraGears:defaultXML(fileName)
     local xml = createXMLFile("ExtraGears", fileName, "ExtraGears")
     setXMLFloat(xml, "ExtraGears.position#x", ExtraGears.default.position.x)
     setXMLFloat(xml, "ExtraGears.position#y", ExtraGears.default.position.y)
+    setXMLFloat(xml, "ExtraGears.showzero", ExtraGears.default.showzero)
     saveXMLFile(xml)
     delete(xml)
 end
@@ -80,16 +84,19 @@ function ExtraGears:onDraw(dt)
     -- ExtraGears.shiftGearOverrideAmount
     -- print("ExtraGears - Draw");
     if self.isClient then
-        -- print("ExtraGears - Is Client")
-        local vehicle = g_currentMission.controlledVehicle
-        if vehicle ~= nil and vehicle:getIsSynchronized() then
-            if nil == ExtraGears.shiftGearOverrideAmount then
-            ExtraGears.shiftGearOverrideAmount = 0
+        if self.showzero then
+            -- print("ExtraGears - Is Client")
+            local vehicle = g_currentMission.controlledVehicle
+            if vehicle ~= nil and vehicle:getIsSynchronized() then
+                if nil == ExtraGears.shiftGearOverrideAmount then
+                ExtraGears.shiftGearOverrideAmount = 0
+                end
+
+                -- renderText(0.96, 0.01, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
+                renderText(ExtraGears.position.x, ExtraGears.position.y, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
+                setTextColor(1, 1, 1, 1)
+                setTextAlignment(RenderText.ALIGN_RIGHT)
             end
-            -- renderText(0.96, 0.01, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
-            renderText(ExtraGears.position.x, ExtraGears.position.y, 0.03, "+"..tostring(ExtraGears.shiftGearOverrideAmount))
-            setTextColor(1, 1, 1, 1)
-            setTextAlignment(RenderText.ALIGN_RIGHT)
         end
     end
 end
