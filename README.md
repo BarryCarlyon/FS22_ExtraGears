@@ -3,6 +3,8 @@
 In the current game patch (1.2.0.0), Giants messed with how "Default Gears" works.
 As a result, the mod is completely broken!
 
+A patch for this is now in the queue!
+
 # FS22_ExtraGears
 
 FS22 allows you to bind gears to keybinds.
