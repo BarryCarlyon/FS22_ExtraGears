@@ -21,8 +21,6 @@ Additionally for those with a six or eight speed shifter, you can bind "shift" k
 
 You can shift by 6, 12, 18, 8, or 16.
 It's is important you bind your shifter to Extra Gears 1-6/8 not Base Games 1-6/8.
-
-Now Supports Multiplayer Correctly.
 ]]></en>
         <de><![CDATA[
 Fügt Tastenbelegungen für die fehlenden Gänge hinzu
@@ -35,8 +33,6 @@ Für alle mit einer sechs- oder achtfach SchaltungWeiterhin kann ausserdem "Shif
 
 Es kann um 6, 12, 18, 8, or 16 Gänge geschaltet werden.
 Es ist wichtig, dass Sie Ihren Schalthebel an Extra Gears 1-6/8 und nicht an Base Games 1-6/8 binden.
-
-Unterstützt jetzt den Multiplayer korrekt.
 ]]></de>
 	<cz><![CDATA[
 Přidává zkratky pro chybějící rychlostní stupně
@@ -49,8 +45,6 @@ Navíc pro ty, kteří mají šesti nebo osmi rychlostní řadící páku, můž
 
 Nyní můžete řadit po 6, 12, 18, 8 nebo 16.
 Je důležité, abyste řadicí páku navázali na Extra Gears 1-6/8, nikoli na Base Games 1-6/8.
-
-Nyní také s podporou Multiplayeru.
 ]]></cz>
         <it><![CDATA[
 Aggiunge combinazioni di tasti per le marce mancanti
@@ -63,8 +57,6 @@ Inoltre, per quelli con un cambio a sei o otto velocità, puoi associare i tasti
 
 Puoi cambiare di 6, 12, 18, 8 o 16.
 È importante che leghi il tuo cambio a Extra Gears 1-6/8 e non a Base Games 1-6/8.
-
-Ora supporta correttamente il multiplayer.
 ]]></it>
         <nl><![CDATA[
 Voegt toetsencombinaties toe voor de missende versnellingen.
@@ -77,8 +69,6 @@ Aanvullend voor de gene met zes of acht versnellingspook, Je kan "shift" toetsen
 
 Je kan per 6, 12, 18, 8, of 16 schakelen.
 Het is belangrijk dat je je shifter bindt aan Extra Gears 1-6/8 en niet aan Base Games 1-6/8.
-
-Ondersteund nu mutiplayer correct
 ]]></nl>
     </description>
     <multiplayer supported="true"/>

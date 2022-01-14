@@ -307,7 +307,7 @@ function MotorGearShiftEvent.sendEvent(vehicle, shiftType, shiftValue)
             if shiftValue > 0 then
                 shiftValue = shiftValue + ExtraGears.shiftGearOverrideAmount;
             end
-            print("ExtraGears - in shiftevent resolved " ..tostring(inp) ..tostring(' ') ..tostring(ExtraGears.shiftGearOverrideAmount) ..(' ') ..tostring(shiftValue));
+            --print("ExtraGears - in shiftevent resolved " ..tostring(inp) ..tostring(' ') ..tostring(ExtraGears.shiftGearOverrideAmount) ..(' ') ..tostring(shiftValue));
             -- print("ExtraGears - in shiftevent resolved " ..tostring(shiftValue));
         end
 
