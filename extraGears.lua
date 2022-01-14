@@ -131,7 +131,24 @@ function Motorized:onRegisterActionEvents(isActiveForInput, isActiveForInputIgno
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.SHIFT_GEAR_SELECT_8, self, Motorized.actionEventSelectGear, true, true, true, true, 8)
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
 
-                        print("ExtraGears -- Override Motorized:onRegisterActionEvents for vehicle motor registration 9->18")
+                        print("ExtraGears -- Override Motorized:onRegisterActionEvents for vehicle motor registration 1->18")
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_1, self, Motorized.actionEventSelectGear, true, true, true, true, 1)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_2, self, Motorized.actionEventSelectGear, true, true, true, true, 2)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_3, self, Motorized.actionEventSelectGear, true, true, true, true, 3)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_4, self, Motorized.actionEventSelectGear, true, true, true, true, 4)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_5, self, Motorized.actionEventSelectGear, true, true, true, true, 5)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_6, self, Motorized.actionEventSelectGear, true, true, true, true, 6)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_7, self, Motorized.actionEventSelectGear, true, true, true, true, 7)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+                        _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_8, self, Motorized.actionEventSelectGear, true, true, true, true, 8)
+                        g_inputBinding:setActionEventTextVisibility(actionEventId, false)
+
                         -- add 9 -> 18
                         _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.EXG_GEAR_9, self, Motorized.actionEventSelectGear, true, true, true, true, 9)
                         g_inputBinding:setActionEventTextVisibility(actionEventId, false)
@@ -272,15 +289,25 @@ function MotorGearShiftEvent.sendEvent(vehicle, shiftType, shiftValue)
     if g_client ~= nil then
         if shiftType == MotorGearShiftEvent.TYPE_SELECT_GEAR then
             --sanity check
+
+            local inp = shiftValue;
+
             if nill == ExtraGears.shiftGearOverrideAmount then
                 ExtraGears.shiftGearOverrideAmount = 0
             end
             -- print("ExtraGears - in shiftevent sendEvent - " ..tostring(shiftValue) .." | " ..tostring(ExtraGears.shiftGearOverrideAmount));
             -- is the stick in neutral?
             -- only bump if not in neutral
+
+            -- 1.2 patch
+            -- if shiftValue > 1 then
+            --     shiftValue = shiftValue - (keybind - 1);
+            -- end
+
             if shiftValue > 0 then
                 shiftValue = shiftValue + ExtraGears.shiftGearOverrideAmount;
             end
+            print("ExtraGears - in shiftevent resolved " ..tostring(inp) ..tostring(' ') ..tostring(ExtraGears.shiftGearOverrideAmount) ..(' ') ..tostring(shiftValue));
             -- print("ExtraGears - in shiftevent resolved " ..tostring(shiftValue));
         end
 

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
     <texts>
+        <text name="input_EXG_GEAR_1" text="1. Gang"/>
+        <text name="input_EXG_GEAR_2" text="2. Gang"/>
+        <text name="input_EXG_GEAR_3" text="3. Gang"/>
+        <text name="input_EXG_GEAR_4" text="4. Gang"/>
+        <text name="input_EXG_GEAR_5" text="5. Gang"/>
+        <text name="input_EXG_GEAR_6" text="6. Gang"/>
+        <text name="input_EXG_GEAR_7" text="7. Gang"/>
+        <text name="input_EXG_GEAR_8" text="8. Gang"/>
         <text name="input_EXG_GEAR_9" text="9. Gang"/>
         <text name="input_EXG_GEAR_10" text="10. Gang"/>
         <text name="input_EXG_GEAR_11" text="11. Gang"/>
