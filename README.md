@@ -5,6 +5,13 @@ As a result, the mod is completely broken!
 
 A patch for this is now in the queue!
 
+> Number of mods waiting to be tested: 1109
+> Current average waiting time for newly submitted Mods: 6 workdays
+
+Patch submittred 14th January. So...... we'll see how we go...
+
+https://forum.giants-software.com/viewtopic.php?f=963&t=140422
+
 # FS22_ExtraGears
 
 FS22 allows you to bind gears to keybinds.
