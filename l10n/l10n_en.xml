@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
     <texts>
+        <text name="input_EXG_GEAR_1" text="Gear 1"/>
+        <text name="input_EXG_GEAR_2" text="Gear 2"/>
+        <text name="input_EXG_GEAR_3" text="Gear 3"/>
+        <text name="input_EXG_GEAR_4" text="Gear 4"/>
+        <text name="input_EXG_GEAR_5" text="Gear 5"/>
+        <text name="input_EXG_GEAR_6" text="Gear 6"/>
+        <text name="input_EXG_GEAR_7" text="Gear 7"/>
+        <text name="input_EXG_GEAR_8" text="Gear 8"/>
         <text name="input_EXG_GEAR_9" text="Gear 9"/>
         <text name="input_EXG_GEAR_10" text="Gear 10"/>
         <text name="input_EXG_GEAR_11" text="Gear 11"/>

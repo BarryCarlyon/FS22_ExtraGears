@@ -1,3 +1,8 @@
+# Please note
+
+In the current game patch (1.2.0.0), Giants messed with how "Default Gears" works.
+As a result, the mod is completely broken!
+
 # FS22_ExtraGears
 
 FS22 allows you to bind gears to keybinds.
@@ -11,7 +16,8 @@ The game only allows you to bind
 
 So for vehicles with more than 8 gears (in either direction) you have to use flappy paddle.
 
-This mod adds additional Gear Keybindings, up to 18, and Gear Groups 5-6
+This mod adds additional Gear Keybindings, up to 18, and Gear Groups 5-6.
+If using this mod it is IMPORANT to use the Extra Gears 1-8 Bindings, not the base games 1-8
 
 Alterantively lets you bind controls for "shift mode", this makes the gearbox similar to Euro Truck Simulator 2.
 
@@ -102,8 +108,10 @@ Please Open a Pull Request with the new/updated `l10n/l10n_CODE.xml` file and up
 - Fixed Multiplayer Supports
 - Added a on screen Display (bottom right) of the current gear shift value
 
-## Pending after v1.0.0.1 clears
+## Pre Release 1.0.0.2
 
+- Fix game to work for Game Patch 1.2
 - Added Gear Groups 5/6 as per `SentinelMantik` report
 - Revise the readme and added notes on submitting a translation
 - Added Czech translation 
+- Added Dutch translation 

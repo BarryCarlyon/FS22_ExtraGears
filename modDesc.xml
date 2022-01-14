@@ -5,7 +5,7 @@
     <title>
         <en>Extra Gears</en>
         <de>Weitere Gänge</de>
-	<cz>Extra rychlostní stupně</cz>
+        <cz>Extra rychlostní stupně</cz>
         <it>Marce Extra</it>
         <nl>Extra versnellingen</nl>
     </title>
@@ -20,6 +20,7 @@ Extra Gears adds keybindings up to 18. For direct Shifter access and adds Gear G
 Additionally for those with a six or eight speed shifter, you can bind "shift" keys to use the same six or eight to access higher gears. This is similar to other Simulator Games.
 
 You can shift by 6, 12, 18, 8, or 16.
+It's is important you bind your shifter to Extra Gears 1-6/8 not Base Games 1-6/8.
 
 Now Supports Multiplayer Correctly.
 ]]></en>
@@ -33,6 +34,7 @@ Weitere Gänge fügt Tastenbelegungen für bis zum 18. Gang hinzu. Für direkten
 Für alle mit einer sechs- oder achtfach SchaltungWeiterhin kann ausserdem "Shift" belegt werden, um die Selben sechs oder acht Gänge auch zur Schaltung in die höheren Gänge zu nutzen. Ähnlich wie bei anderen Simulationsspielen.
 
 Es kann um 6, 12, 18, 8, or 16 Gänge geschaltet werden.
+Es ist wichtig, dass Sie Ihren Schalthebel an Extra Gears 1-6/8 und nicht an Base Games 1-6/8 binden.
 
 Unterstützt jetzt den Multiplayer korrekt.
 ]]></de>
@@ -46,6 +48,7 @@ Mod Extra rychlostní stupně přivádá možnost až do 18. Pro přímý přís
 Navíc pro ty, kteří mají šesti nebo osmi rychlostní řadící páku, můžete vytvořit zkratku pro použití stejných stupňů k přístupu do vyšších stupňů. Tak jako jste zvyklí z jiných simulátorů.
 
 Nyní můžete řadit po 6, 12, 18, 8 nebo 16.
+Je důležité, abyste řadicí páku navázali na Extra Gears 1-6/8, nikoli na Base Games 1-6/8.
 
 Nyní také s podporou Multiplayeru.
 ]]></cz>
@@ -59,6 +62,7 @@ Marce Extra aggiunge combinazioni di tasti fino a 18. Per l'accesso diretto al c
 Inoltre, per quelli con un cambio a sei o otto velocità, puoi associare i tasti "shift" per utilizzare gli stessi sei o otto per accedere a marce più alte. Questo è simile ad altri giochi di simulazione.
 
 Puoi cambiare di 6, 12, 18, 8 o 16.
+È importante che leghi il tuo cambio a Extra Gears 1-6/8 e non a Base Games 1-6/8.
 
 Ora supporta correttamente il multiplayer.
 ]]></it>
@@ -72,6 +76,7 @@ Extra versnellingen voegt toetsencombinaties tot de 18e versnelling toe voor dir
 Aanvullend voor de gene met zes of acht versnellingspook, Je kan "shift" toetsen verbinden om de zelfde zes of acht hogere versnellingen te gebruiken. Dit is vergelijkbaar met hoe het in andere Simulator spellen word gedaan.
 
 Je kan per 6, 12, 18, 8, of 16 schakelen.
+Het is belangrijk dat je je shifter bindt aan Extra Gears 1-6/8 en niet aan Base Games 1-6/8.
 
 Ondersteund nu mutiplayer correct
 ]]></nl>
@@ -83,6 +88,15 @@ Ondersteund nu mutiplayer correct
     </extraSourceFiles>
     <l10n filenamePrefix="l10n/l10n" />
     <actions>
+        <action name="EXG_GEAR_1" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_2" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_3" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_4" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_5" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_6" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_7" category="VEHICLE" ignoreComboMask="false" />
+        <action name="EXG_GEAR_8" category="VEHICLE" ignoreComboMask="false" />
+
         <action name="EXG_GEAR_9" category="VEHICLE" ignoreComboMask="false" />
         <action name="EXG_GEAR_10" category="VEHICLE" ignoreComboMask="false" />
         <action name="EXG_GEAR_11" category="VEHICLE" ignoreComboMask="false" />
@@ -109,6 +123,15 @@ Ondersteund nu mutiplayer correct
         <action name="EXG_GEAR_SHIFT_C6" category="VEHICLE" ignoreComboMask="false" />
     </actions>
     <inputBinding>
+        <actionBinding action="EXG_GEAR_1"></actionBinding>
+        <actionBinding action="EXG_GEAR_2"></actionBinding>
+        <actionBinding action="EXG_GEAR_3"></actionBinding>
+        <actionBinding action="EXG_GEAR_4"></actionBinding>
+        <actionBinding action="EXG_GEAR_5"></actionBinding>
+        <actionBinding action="EXG_GEAR_6"></actionBinding>
+        <actionBinding action="EXG_GEAR_7"></actionBinding>
+        <actionBinding action="EXG_GEAR_8"></actionBinding>
+
         <actionBinding action="EXG_GEAR_9"></actionBinding>
         <actionBinding action="EXG_GEAR_10"></actionBinding>
         <actionBinding action="EXG_GEAR_11"></actionBinding>
